@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: Peter Kourzanov
-version: 0.0.2
+version: 0.0.4
 markdown:
   image_dir: "assets"
 export_on_save:
@@ -33,7 +33,7 @@ This repository[^1] is currently **not** in use, be$\cos{\pi\over 2}=0$..
 \subsection{Foo}
 \subparagraph{Step1} Define a variable
 <<code/bar.py>>=
-var=2
+`var=2
 @
 \subparagraph{Step2} Use it.
 <<>>=
@@ -54,6 +54,7 @@ print("var =",var+1)
 ```python {cmd=true id="code/bar.py 2" }
 var=2
 ```
+<div id="symbol-var"/>
 
 
 ##### Step2
@@ -72,6 +73,7 @@ ___
 1. &laquo;[code/bar.py](#chunk-code-bar.py)&raquo;: [2](#chunk-code-bar.py-2),[4](#chunk-code-bar.py-4)
 
 ## Definitions
+1. [var](#symbol-var): &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; ([2](#chunk-code-bar.py-2))
 
 ## Hierarchy
 

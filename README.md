@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: 'Peter Kourzanov'
-version: 0.0.2
+version: 0.0.4
 ---  
   
   
@@ -46,6 +46,7 @@ This repository[^1] is currently **not** in use, be<img src="https://latex.codec
 ```python
 var=2
 ```
+<div id="symbol-var"/>
   
   
 ##### Step2
@@ -59,6 +60,11 @@ var=2
 ```python
 print("var =",var+1)
 ```
+
+```
+var = 3
+```
+
   
 ___
 # Appendix
@@ -69,6 +75,7 @@ ___
   
 ## Definitions
   
+1. [var](#symbol-var ): &laquo;[code/bar.py](#chunk-code-bar.py )&raquo; ([2](#chunk-code-bar.py-2 ))
   
 ## Hierarchy
   
