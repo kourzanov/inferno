@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: Peter Kourzanov
-version: 0.0.2
+version: 0.0.1
 output: word_document
 markdown:
   image_dir: "assets"
@@ -30,7 +30,7 @@ export_on_save:
 </tr>
 </table>
 
-Here comes a [[Module]].
+Here comes a [Module](Module.md).
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}
@@ -89,6 +89,9 @@ rankdir=LR
 "code/bar.py"[style=filled URL="#chunk-code-bar.py"]
 }
 ```
+<map id="deps" name="deps">
+<area shape="poly" id="node1" href="#chunk-code-bar.py" title="code/bar.py" alt="" coords="151,29,147,22,137,15,121,10,101,7,78,5,56,7,35,10,19,15,9,22,5,29,9,37,19,43,35,49,56,52,78,53,101,52,121,49,137,43,147,37"/>
+</map>
 
 ## Full code listings
 
