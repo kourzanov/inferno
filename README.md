@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: 'Peter Kourzanov'
-version: 0.1
+version: 0.4
 ---  
   
   
@@ -35,7 +35,7 @@ This repository[^1] is currently **not** in use, be<img src="https://latex.codec
   
   
   
-#### Step1
+##### Step1
   
 . Define a variable
 <div id="chunk-bar-2"/>
@@ -48,7 +48,7 @@ var=2
 ```
   
   
-#### Step2
+##### Step2
   
 . Use it.
 <div id="chunk-bar-4"/>
@@ -79,7 +79,7 @@ ___
   
   
 
-![](../../assets/ca116596d5c16e00972601c54139b6760.png)  
+![](assets/ca116596d5c16e00972601c54139b6760.png)  
 
   
 ## Full code listings

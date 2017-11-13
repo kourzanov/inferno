@@ -1,7 +1,9 @@
 ---
 title: Inferno
 author: Peter Kourzanov
-version: 0.1
+version: 0.4
+markdown:
+  image_dir: "assets"
 export_on_save:
   markdown: true
 ---
@@ -29,11 +31,11 @@ This repository[^1] is currently **not** in use, be$\cos{\pi\over 2}=0$..
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}
-\paragraph{Step1}. Define a variable
+\subparagraph{Step1}. Define a variable
 <<bar>>=
 var=2
 @
-\paragraph{Step2}. Use it.
+\subparagraph{Step2}. Use it.
 <<>>=
 print("var =",var)
 ```
@@ -43,7 +45,7 @@ print("var =",var)
 ## Foo
 
 
-#### Step1
+##### Step1
 . Define a variable
 <div id="chunk-bar-2"/>
 
@@ -54,7 +56,7 @@ var=2
 ```
 
 
-#### Step2
+##### Step2
 . Use it.
 <div id="chunk-bar-4"/>
 
