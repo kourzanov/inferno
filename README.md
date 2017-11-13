@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: 'Peter Kourzanov'
-version: 0.4
+version: 0.0.2
 ---  
   
   
@@ -37,10 +37,10 @@ This repository[^1] is currently **not** in use, be<img src="https://latex.codec
   
 ##### Step1
   
-. Define a variable
-<div id="chunk-bar-2"/>
+ Define a variable
+<div id="chunk-code-bar.py-2"/>
   
-###### Code for &laquo;[bar](#chunk-bar )&raquo; (2)
+###### Code for &laquo;[code/bar.py](#chunk-code-bar.py )&raquo; (2)
   
   
 ```python
@@ -50,27 +50,22 @@ var=2
   
 ##### Step2
   
-. Use it.
-<div id="chunk-bar-4"/>
+ Use it.
+<div id="chunk-code-bar.py-4"/>
   
-###### Code for &laquo;[bar](#chunk-bar )&raquo; (4)
+###### Code for &laquo;[code/bar.py](#chunk-code-bar.py )&raquo; (4)
   
   
 ```python
-print("var =",var)
+print("var =",var+1)
 ```
-
-```
-var = 2
-```
-
   
 ___
 # Appendix
   
 ## Chunks
   
-1. &laquo;[bar](#chunk-bar )&raquo;: [2](#chunk-bar-2 ),[4](#chunk-bar-4 )
+1. &laquo;[code/bar.py](#chunk-code-bar.py )&raquo;: [2](#chunk-code-bar.py-2 ),[4](#chunk-code-bar.py-4 )
   
 ## Definitions
   
@@ -85,13 +80,13 @@ ___
 ## Full code listings
   
   
-<div id="chunk-bar"/>
+<div id="chunk-code-bar.py"/>
   
-### &laquo;bar&raquo;
+### &laquo;code/bar.py&raquo;
   
 ```python
 var=2
-print("var =",var)
+print("var =",var+1)
 ```
   
   

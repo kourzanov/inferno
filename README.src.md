@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: Peter Kourzanov
-version: 0.4
+version: 0.0.2
 markdown:
   image_dir: "assets"
 export_on_save:
@@ -31,13 +31,13 @@ This repository[^1] is currently **not** in use, be$\cos{\pi\over 2}=0$..
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}
-\subparagraph{Step1}. Define a variable
-<<bar>>=
+\subparagraph{Step1} Define a variable
+<<code/bar.py>>=
 var=2
 @
-\subparagraph{Step2}. Use it.
+\subparagraph{Step2} Use it.
 <<>>=
-print("var =",var)
+print("var =",var+1)
 ```
 <!-- code_chunk_output -->
 
@@ -46,30 +46,30 @@ print("var =",var)
 
 
 ##### Step1
-. Define a variable
-<div id="chunk-bar-2"/>
+ Define a variable
+<div id="chunk-code-bar.py-2"/>
 
-###### Code for &laquo;[bar](#chunk-bar)&raquo; (2)
+###### Code for &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; (2)
 
-```python {cmd=true id="bar 2" }
+```python {cmd=true id="code/bar.py 2" }
 var=2
 ```
 
 
 ##### Step2
-. Use it.
-<div id="chunk-bar-4"/>
+ Use it.
+<div id="chunk-code-bar.py-4"/>
 
-###### Code for &laquo;[bar](#chunk-bar)&raquo; (4)
+###### Code for &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; (4)
 
-```python { continue="bar 2" cmd=true id="bar 4" }
-print("var =",var)
+```python { continue="code/bar.py 2" cmd=true id="code/bar.py 4" }
+print("var =",var+1)
 ```
 
 ___
 # Appendix
 ## Chunks
-1. &laquo;[bar](#chunk-bar)&raquo;: [2](#chunk-bar-2),[4](#chunk-bar-4)
+1. &laquo;[code/bar.py](#chunk-code-bar.py)&raquo;: [2](#chunk-code-bar.py-2),[4](#chunk-code-bar.py-4)
 
 ## Definitions
 
@@ -81,18 +81,18 @@ node [color=white fontcolor=gray45]
 edge [color=white fontcolor=gray45]
 overlap=false
 rankdir=LR
-"bar"[style=filled URL="#chunk-bar"]
+"code/bar.py"[style=filled URL="#chunk-code-bar.py"]
 }
 ```
 
 ## Full code listings
 
-<div id="chunk-bar"/>
+<div id="chunk-code-bar.py"/>
 
-### &laquo;bar&raquo;
-```python {cmd=true stdin=false run_on_save=false id='bar'}
+### &laquo;code/bar.py&raquo;
+```python {cmd=true stdin=false run_on_save=false id='code/bar.py'}
 var=2
-print("var =",var)
+print("var =",var+1)
 ```
 
 
