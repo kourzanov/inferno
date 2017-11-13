@@ -2,6 +2,7 @@
 title: Inferno
 author: 'Peter Kourzanov'
 version: 0.0.2
+output: word_document
 ---  
   
   
