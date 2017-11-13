@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: Peter Kourzanov
-version: 0.0.4
+version: 0.0.3
 markdown:
   image_dir: "assets"
 export_on_save:
@@ -16,7 +16,7 @@ export_on_save:
 <table class="noborder"><tr><th>1st</th><th>2nd</th></tr>
 <tr><td>
 
-*one*
+*one* [[Module]]
 ```julia
 1+2
 ```
@@ -28,6 +28,8 @@ export_on_save:
 * bar</td>
 </tr>
 </table>
+
+Here comes a [[Module]].
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}

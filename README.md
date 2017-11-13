@@ -1,7 +1,7 @@
 ---
 title: Inferno
 author: 'Peter Kourzanov'
-version: 0.0.4
+version: 0.0.3
 ---  
   
   
@@ -14,7 +14,7 @@ version: 0.0.4
 <table class="noborder"><tr><th>1st</th><th>2nd</th></tr>
 <tr><td>
   
-*one*
+*one* [[Module]]
 ```julia
 1+2
 ```
@@ -60,6 +60,11 @@ var=2
 ```python
 print("var =",var+1)
 ```
+
+```
+var = 3
+```
+
   
 ___
 # Appendix
@@ -90,6 +95,11 @@ ___
 var=2
 print("var =",var+1)
 ```
+
+```
+var = 3
+```
+
   
   
   
