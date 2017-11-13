@@ -8,7 +8,7 @@ version: 0.0.4
 # Inferno
   
   
-This repository[^1] is currently **not** in use, be<img src="https://latex.codecogs.com/png.latex?&#x5C;cos{&#x5C;pi&#x5C;over%202}=0"/>..
+{~~This~>That~~} repository[^1] is {==currently==} **not** in use, be<img src="https://latex.codecogs.com/png.latex?&#x5C;cos{&#x5C;pi&#x5C;over%202}=0"/>..
 [^1]: and only this one
   
 <table class="noborder"><tr><th>1st</th><th>2nd</th></tr>
@@ -60,11 +60,6 @@ var=2
 ```python
 print("var =",var+1)
 ```
-
-```
-var = 3
-```
-
   
 ___
 # Appendix
