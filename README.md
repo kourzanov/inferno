@@ -6,6 +6,26 @@ output: word_document
 ---  
   
   
+  
+  
+  
+* [§ Inferno](#inferno )
+	* [§ Foo](#foo )
+		* [§ Bar](#bar )
+			* [§ Step1](#step1 )
+					* [§ Code for &laquo;code/bar.py&raquo; (2)](#code-for-laquocodebarpychunk-code-barpyraquo-2 )
+			* [§ Step2](#step2 )
+					* [§ Code for &laquo;code/bar.py&raquo; (4)](#code-for-laquocodebarpychunk-code-barpyraquo-4 )
+* [§ Appendix](#appendix )
+	* [§ Chunks](#chunks )
+	* [§ Definitions](#definitions )
+	* [§ Hierarchy](#hierarchy )
+	* [§ Full code listings](#full-code-listings )
+		* [§ &laquo;code/bar.py&raquo;](#laquocodebarpyraquo )
+  
+  
+  
+  
 # Inferno
   
   
@@ -35,6 +55,10 @@ Here comes a [Module](Module.md ).
   
   
 ## Foo
+  
+  
+  
+### Bar
   
   
   

@@ -9,6 +9,25 @@ export_on_save:
   markdown: true
 ---
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [§ Inferno](#inferno)
+	* [§ Foo](#foo)
+		* [§ Bar](#bar)
+			* [§ Step1](#step1)
+					* [§ Code for &laquo;code/bar.py&raquo; (2)](#code-for-laquocodebarpychunk-code-barpyraquo-2)
+			* [§ Step2](#step2)
+					* [§ Code for &laquo;code/bar.py&raquo; (4)](#code-for-laquocodebarpychunk-code-barpyraquo-4)
+* [§ Appendix](#appendix)
+	* [§ Chunks](#chunks)
+	* [§ Definitions](#definitions)
+	* [§ Hierarchy](#hierarchy)
+	* [§ Full code listings](#full-code-listings)
+		* [§ &laquo;code/bar.py&raquo;](#laquocodebarpyraquo)
+
+<!-- /code_chunk_output -->
+
 # Inferno
 
 {~~This~>That~~} repository[^1] is {==currently==} **not** in use, be$\cos{\pi\over 2}=0$..
@@ -34,6 +53,7 @@ Here comes a [Module](Module.md).
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}
+\subsubsection{Bar}
 \paragraph{Step1} Define a variable
 <<code/bar.py>>=
 `var=2
@@ -46,6 +66,9 @@ print("var =",var+1)
 
 
 ## Foo
+
+
+### Bar
 
 
 #### Step1
