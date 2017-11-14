@@ -38,7 +38,7 @@ Here comes a [Module](Module.md ).
   
   
   
-##### Step1
+#### Step1
   
  Define a variable
 <div id="chunk-code-bar.py-2"/>
@@ -52,7 +52,7 @@ var=2
 <div id="symbol-var"/>
   
   
-##### Step2
+#### Step2
   
  Use it.
 <div id="chunk-code-bar.py-4"/>
@@ -63,11 +63,6 @@ var=2
 ```python
 print("var =",var+1)
 ```
-
-```
-var = 3
-```
-
   
 ___
 # Appendix
@@ -101,11 +96,6 @@ ___
 var=2
 print("var =",var+1)
 ```
-
-```
-var = 3
-```
-
   
   
   

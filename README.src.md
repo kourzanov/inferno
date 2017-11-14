@@ -34,11 +34,11 @@ Here comes a [Module](Module.md).
 
 ```latex {cmd=Noweb.bat args=["-b","-l","python"] stdin=true output=markdown hide=true run_on_save=true modify_source=true}
 \subsection{Foo}
-\subparagraph{Step1} Define a variable
+\paragraph{Step1} Define a variable
 <<code/bar.py>>=
 `var=2
 @
-\subparagraph{Step2} Use it.
+\paragraph{Step2} Use it.
 <<>>=
 print("var =",var+1)
 ```
@@ -48,7 +48,7 @@ print("var =",var+1)
 ## Foo
 
 
-##### Step1
+#### Step1
  Define a variable
 <div id="chunk-code-bar.py-2"/>
 
@@ -60,7 +60,7 @@ var=2
 <div id="symbol-var"/>
 
 
-##### Step2
+#### Step2
  Use it.
 <div id="chunk-code-bar.py-4"/>
 
