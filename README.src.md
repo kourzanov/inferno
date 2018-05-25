@@ -16,9 +16,9 @@ export_on_save:
 	* [§ Foo](#foo)
 		* [§ Bar](#bar)
 			* [§ Step1](#step1)
-					* [§ Code for &laquo;code/bar.py&raquo; (2)](#code-for-laquocodebarpychunk-code-barpyraquo-2)
+					* [§ &laquo;code/bar.py&raquo; (≡ 2)](#laquocodebarpychunk-code-barpyraquo-2)
 			* [§ Step2](#step2)
-					* [§ Code for &laquo;code/bar.py&raquo; (4)](#code-for-laquocodebarpychunk-code-barpyraquo-4)
+					* [§ &laquo;code/bar.py&raquo; (⩲ 4)](#laquocodebarpychunk-code-barpyraquo-4)
 * [§ Appendix](#appendix)
 	* [§ Chunks](#chunks)
 	* [§ Definitions](#definitions)
@@ -30,8 +30,75 @@ export_on_save:
 
 # Inferno
 
-{~~This~>That~~} repository[^1] is {==currently==} **not** in use, be$\cos{\pi\over 2}=0$..
+{~~This~>That~~} repository[^1] is {==currently==} **not** in use, be$`\cos{\pi\over 2}=0`$..
 [^1]: and only this one
+
+Moreover,
+```math
+\sin^2{x}+\cos^2{x}=1
+```
+Some diagrams:
+
+1. one
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+2. two
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+3. three
+
+```mermaid
+gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+```
+4. four
+
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
 
 <table class="noborder"><tr><th>1st</th><th>2nd</th></tr>
 <tr><td>
@@ -73,9 +140,10 @@ print("var =",var+1)
 
 #### Step1
  Define a variable
-<div id="chunk-code-bar.py-2"/>
 
-###### Code for &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; (2)
+<div id="chunk-code-barpy-2"/>
+
+###### &laquo;[code/bar.py](#chunk-code-barpy)&raquo; (≡ 2)
 
 ```python {cmd=true id="code/bar.py 2" }
 var=2
@@ -83,42 +151,44 @@ var=2
 <div id="symbol-var"/>
 
 
+
 #### Step2
  Use it.
-<div id="chunk-code-bar.py-4"/>
 
-###### Code for &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; (4)
+<div id="chunk-code-barpy-4"/>
+
+###### &laquo;[code/bar.py](#chunk-code-barpy)&raquo; (⩲ 4)
 
 ```python { continue="code/bar.py 2" cmd=true id="code/bar.py 4" }
 print("var =",var+1)
 ```
 
 ___
+
+___
 # Appendix
 ## Chunks
-1. &laquo;[code/bar.py](#chunk-code-bar.py)&raquo;: [2](#chunk-code-bar.py-2),[4](#chunk-code-bar.py-4)
+1. &laquo;[code/bar.py](#chunk-code-barpy)&raquo;: [2](#chunk-code-barpy-2),[4](#chunk-code-barpy-4)
 
 ## Definitions
-1. [var](#symbol-var): &laquo;[code/bar.py](#chunk-code-bar.py)&raquo; ([2](#chunk-code-bar.py-2))
+1. [var](#symbol-var): &laquo;[code/bar.py](#chunk-code-barpy)&raquo; ([2](#chunk-code-barpy-2))
 
 ## Hierarchy
 
-```Dot.bat {cmd=true args=['-e','neato','-z','1'] hide=true output=html run_on_save=true}
+```Dot.bat {cmd=true args=['-e','neato','-z','.25'] hide=true output=html run_on_save=true usemap="#deps"}
  digraph deps {bgcolor="#282c34"
 node [color=white fontcolor=gray45]
 edge [color=white fontcolor=gray45]
 overlap=false
 rankdir=LR
-"code/bar.py"[style=filled URL="#chunk-code-bar.py"]
 }
 ```
 <map id="deps" name="deps">
-<area shape="poly" id="node1" href="#chunk-code-bar.py" title="code/bar.py" alt="" coords="151,29,147,22,137,15,121,10,101,7,78,5,56,7,35,10,19,15,9,22,5,29,9,37,19,43,35,49,56,52,78,53,101,52,121,49,137,43,147,37"/>
 </map>
 
 ## Full code listings
 
-<div id="chunk-code-bar.py"/>
+<div id="chunk-code-barpy"/>
 
 ### &laquo;code/bar.py&raquo;
 ```python {cmd=true stdin=false run_on_save=false id='code/bar.py'}

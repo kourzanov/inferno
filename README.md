@@ -29,13 +29,80 @@ output: word_document
 # Inferno
   
   
-{~~This~>That~~} repository[^1] is {==currently==} **not** in use, be<img src="https://latex.codecogs.com/png.latex?&#x5C;cos{&#x5C;pi&#x5C;over%202}=0"/>..
+<del>This</del><ins>That</ins> repository[^1] is <mark>currently</mark> **not** in use, be$`\cos{\pi\over 2}=0`$..
 [^1]: and only this one
+  
+Moreover,
+```math
+\sin^2{x}+\cos^2{x}=1
+```
+Some diagrams:
+  
+1. one
+  
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+```
+2. two
+  
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+3. three
+  
+```mermaid
+gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+```
+4. four
+  
+```mermaid
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+```
   
 <table class="noborder"><tr><th>1st</th><th>2nd</th></tr>
 <tr><td>
   
-*one* [[Module]]
+*one* [Module](Module.md)
 ```julia
 1+2
 ```
@@ -103,7 +170,10 @@ ___
   
   
 
-![](assets/ca116596d5c16e00972601c54139b6760.png)  
+<img src="assets/6ce043e13eeaf70bbeee34877e1dca3d0.png?0.9416611408591149" usemap="#deps"/>
+
+
+<!-- code base= token= -->
 
 <map id="deps" name="deps">
 <area shape="poly" id="node1" href="#chunk-code-bar.py" title="code/bar.py" alt="" coords="151,29,147,22,137,15,121,10,101,7,78,5,56,7,35,10,19,15,9,22,5,29,9,37,19,43,35,49,56,52,78,53,101,52,121,49,137,43,147,37"/>
